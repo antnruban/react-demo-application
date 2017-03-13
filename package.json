@@ -5,11 +5,13 @@
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-router": "^2.8.1",
+    "react-router": "^2.8.1"
+  },
+  "devDependencies": {
     "react-scripts": "0.9.5"
   },
-  "devDependencies": {},
   "scripts": {
+    "postinstall": "npm install -g react-scripts serve && react-scripts build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
