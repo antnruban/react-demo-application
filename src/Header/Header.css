@@ -1,0 +1,26 @@
+.header-menu {
+  float: right;
+}
+
+.menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu-item {
+  float: left;
+}
+
+.menu-item a {
+  padding: 16px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.menu-item a:hover {
+  background-color: #333333;
+}

@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import { Link } from 'react-router';
 import './App.css';
 
-import { UserList } from './UserList/UserList';
+import { Header } from './Header/Header';
+import { Footer } from './Footer/Footer';
 
 export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        </div>
+        <Header />
         <div className="App-intro">
-          <UserList />
+          <main id="main" role="main">
+            {React.cloneElement(this.props.children)}
+          </main>
         </div>
-        <Link to="/users">Users</Link>
+        <Footer />
       </div>
     );
   }
